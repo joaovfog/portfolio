@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/ibm-plex-sans";
+@import "@fontsource-variable/jetbrains-mono";
+
+@theme {
+  --color-ink: #0e1116;
+  --color-surface: #141922;
+  --color-raised: #1f252e;
+  --color-line: #252b34;
+  --color-line-strong: #3a424d;
+  --color-text: #e8eaed;
+  --color-muted: #b4bcc6;
+  --color-subtle: #9aa3ae;
+  --color-accent: #c8f169;
+
+  --font-display: "Space Grotesk Variable", system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans Variable", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-ink);
+}
