@@ -1,3 +1,3 @@
-# Portfólio — João Vitor Fogaça
+# Portfolio — João Vitor Fogaça
 
-Landing page pessoal feita com Next.js (App Router), React, TypeScript e Tailwind CSS.
+Personal landing page build with Next.js (App Router), React, TypeScript e Tailwind CSS.
